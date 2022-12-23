@@ -1,7 +1,6 @@
 This section details how to build the conda environments, download key software, and access supplementary information that is required for the HPC genotyping workflow. Let's set up our preferred conda channels - for bioinformatics we often rely on bioconda.
 
-` conda config --add channels bioconda
-
+`conda config --add channels bioconda \
  conda config --add channels conda-forge `
 
 Now we can start installing software needed! 
