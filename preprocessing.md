@@ -9,7 +9,13 @@ First, we need to set up the directory structure:
 mkdir trim
 mkdir align
 mkdir angsd_out
+mkdir gatk_out
 mkdir phased
 mkdir GWAS
 mkdir PCANGSD_out 
+```
+We assume our reads are already hanging out in the aptly named
+  
+```
+/reads
 ```
