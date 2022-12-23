@@ -11,3 +11,9 @@ Ths first thing we'll want to do with our data is run quality and adapter trimmi
 Make an environment for alignment of reads to the reference genome, as well as working with genotype likelihoods in ANGSD. These are imported together to ensure version comaptibility between ANGSD and the corresponding htslib and samtools installs. 
 
 `conda create -n align samtools htslib bwa bwa-mem2 angsd -c bioconda`
+
+Next we need different versions of software for genotyping and pre-genotyping processes. ANGSD works with inputs from older versions of GATK, whereas we can directly carry out genotyping in the current version of GATK. To get the old verison (3.7), we do:
+
+`wget https://storage.googleapis.com/gatk-software/package-archive/gatk/GenomeAnalysisTK-3.7-0-gcfedb67.tar.bz2
+bzip2 -d GenomeAnalysisTK-3.7-0-gcfedb67.tar.bz2
+tar -xvf`
