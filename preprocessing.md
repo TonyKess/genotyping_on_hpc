@@ -17,5 +17,5 @@ mkdir PCANGSD_out
 We assume our reads are already hanging out in the aptly named
   
 ```
-/reads
+reads/
 ```
