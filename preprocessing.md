@@ -6,6 +6,7 @@ This section provides links for running these tools in SLURM, and a bit of backg
 First, we need to set up the directory structure:
   
 ```
+mkdir sets
 mkdir trim
 mkdir align
 mkdir angsd_out
@@ -18,4 +19,14 @@ We assume our reads are already hanging out in the aptly named
   
 ```
 reads/
+```
+
+Go to the raw reads and use split to make set files for parallel SLURM jobs 
+
+``` 
+cd reads
+  
+ls *R1.fastq.gz | \
+  sed 's/\_R1.fastq.gz//' > All_AEIPinds.tsv 
+
 ```
