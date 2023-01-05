@@ -35,8 +35,7 @@ ls *R1.fastq.gz | \
 Launch the first script in the analysis pipeline, using default trimming parameters in [fastp](https://github.com/OpenGene/fastp) to remove adapter content, and add a sliding window function to remove polyG tails, as suggested by [Lou et al. 2022](https://doi.org/10.1111/1755-0998.13559). This script will be launched to run in parallel to run on all individuals, 200 at a time.
 
 ```
-sbatch --export=ALL,sets=aeipinds.tsv.tsv,paramfile=WGSparams_aeip.tsv 01_fastp_parallel.sh 
-
+sbatch --export=ALL,set=aeipinds.tsv,paramfile=WGSparams_aeip.tsv 01_fastp_parallel.sh
 ```
   
   
